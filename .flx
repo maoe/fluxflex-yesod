@@ -1,0 +1,9 @@
+[setup]
+rm -rf .cabal
+
+[deploy]
+/usr/local/cabal/bin/cabal update
+/usr/local/cabal/bin/cabal clean
+/usr/local/cabal/bin/cabal install --one-shot
+cp -v .cabal/bin/fluxflex-yesod public_html/dispatch.fcgi
+chmod -v 705 public_html/dispatch.fcgi

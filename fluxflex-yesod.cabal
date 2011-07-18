@@ -1,0 +1,20 @@
+Name:                fluxflex-yesod
+Version:             0.0.0
+Synopsis:            Yesod on fluxflex
+License:             BSD3
+License-file:        LICENSE
+Author:              Mitsutoshi Aoe <maoe@foldr.in>
+Maintainer:          Mitsutoshi Aoe <maoe@foldr.in>
+Copyright:           (c) 2011, Mitsutoshi Aoe
+Category:            Web
+Build-type:          Simple
+
+Extra-source-files:  README.md
+Cabal-version:       >=1.2
+
+
+Executable fluxflex-yesod
+  Main-is:           Main.hs
+  Build-depends:     base
+                   , yesod
+                   , wai-handler-fastcgi
