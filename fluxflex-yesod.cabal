@@ -16,5 +16,5 @@ Cabal-version:       >=1.2
 Executable fluxflex-yesod
   Main-is:           Main.hs
   Build-depends:     base
-                   , yesod
-                   , wai-handler-fastcgi
+                   , yesod               == 0.8.2.1
+                   , wai-handler-fastcgi == 0.4.*
